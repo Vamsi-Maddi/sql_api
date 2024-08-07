@@ -20,6 +20,6 @@ app.post("/createNote", async (req,res)=>{
     const result = await createNote(id,title,description);
     res.json({"msg":"Note created Successfully"});
 })
-app.listen(process.env.PORT,()=>{
+app.listen(4000,()=>{
     console.log("Server listening to the port 4000");
 });
